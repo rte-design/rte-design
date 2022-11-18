@@ -6,33 +6,11 @@ import { randomString } from '../../../.storybook/utils';
 
 const meta: Meta = {
   title: 'Components/Message',
-  // component: message,
-  // argTypes: {
-  //   type: {
-  //     options: alertTypes,
-  //     control: { type: 'select' },
-  //     defaultValue: 'success',
-  //   },
-  //   showIcon: {
-  //     control: { type: 'boolean' },
-  //     defaultValue: false,
-  //   },
-  //   message: {
-  //     control: { type: 'text' },
-  //     defaultValue: 'I am message',
-  //   },
-  //   closable: {
-  //     control: { type: 'boolean' },
-  //     defaultValue: false,
-  //   },
-  //   closeText: {
-  //     control: { type: 'text' },
-  //     defaultValue: '',
-  //   },
-  //   onClose: { action: 'onClose' },
-  //   onClick: { action: 'onClick' },
-  // },
 };
+
+message.config({
+  maxCount: 5,
+})
 
 export const Docs = (args) => {
   const info = () => {

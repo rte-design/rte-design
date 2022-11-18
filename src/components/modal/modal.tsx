@@ -162,10 +162,10 @@ const Modal: React.FC<ModalProps> = (props) => {
 
         return (
           <>
-            <Button onClick={handleCancel} {...props.cancelButtonProps}>
+            <Button onClick={handleCancel} {...props.cancelButtonProps} size="small" type="secondary">
               {cancelText || contextLocale?.cancelText}
             </Button>
-            <Button type="primary" loading={confirmLoading} onClick={handleOk} {...props.okButtonProps}>
+            <Button type="primary" loading={confirmLoading} onClick={handleOk} {...props.okButtonProps} size="small">
               {okText ?? contextLocale?.okText}
             </Button>
           </>

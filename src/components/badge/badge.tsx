@@ -1,6 +1,6 @@
 import React, { FC, useMemo, useRef } from 'react';
 import { ConfigContext } from '../config-provider/context';
-import { cloneElement } from '../_util/index';
+// import { cloneElement } from '../_util/index';
 import CSSMotion from 'rc-motion';
 import classNames from 'classnames';
 import { BaseProps } from '../../types';
